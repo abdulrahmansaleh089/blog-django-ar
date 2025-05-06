@@ -1,12 +1,115 @@
 {% load static %}
-<html lang="en">
+<html lang="ar">
   <head>
     <meta charset="UTF-8" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="{% static 'CSS/main.css' %}" />
+    <link rel="stylesheet" href="{% static 'blog/CSS/bootstrap.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'blog/CSS/main.css' %}" />
+    <link rel="shortcut icon" href="{% static 'blog/images/favicon.ico' %}" />
   </head>
   <body>
-    <h1>Welcome Sir</h1>
+    <header>
+      <!-- Start Navbar -->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="{% static 'blog/images/mim-logo.png' %}" alt="شعار مدونة" width="30px" />
+            مدونة
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">الرئيسية</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">دوراتي</a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#">دورة بايثون</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">دورة دجانجو</a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">دورة نظام التعلم</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">من أنا ؟</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#">تسجيل دخول</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">تسجيل</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- End Navbar -->
+    </header>
+    <!-- Start Section 5 Posts,Comments -->
+    <section>
+      <div class="container">
+        <div class="row mt-4">
+          <div class="col-md-8">التدوينات</div>
+          <div class="col-md-4">
+            <div class="card mb-3">
+              <h3 class="text-center bg-secondary text-light p-2">اخر التدوينات</h3>
+              <ul>
+                <li>
+                  <a href="#">التدوينة الأولي</a>
+                </li>
+                <li>
+                  <a href="#">التدوينة الثانية</a>
+                </li>
+                <li>
+                  <a href="#">التدوينة الثالثة</a>
+                </li>
+                <li>
+                  <a href="#">التدوينة الرابعة</a>
+                </li>
+                <li>
+                  <a href="#">التدوينة الخامسة</a>
+                </li>
+              </ul>
+            </div>
+            <div class="card mb-3">
+              <h3 class="text-center bg-secondary text-light p-2">اخر التعليقات</h3>
+              <ul>
+                <li>
+                  <a href="#">التعليق الأول</a>
+                </li>
+                <li>
+                  <a href="#">التعليق الثاني</a>
+                </li>
+                <li>
+                  <a href="#">التعليق الثالث</a>
+                </li>
+                <li>
+                  <a href="#">التعليق الرابع</a>
+                </li>
+                <li>
+                  <a href="#">التعليق الخامس</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Section 5 Posts,Comments -->
+
+    <script src="{% static 'blog/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'blog/js/fontawesome-all.min.js' %}"></script>
   </body>
 </html>

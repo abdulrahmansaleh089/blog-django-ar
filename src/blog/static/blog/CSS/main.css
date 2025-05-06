@@ -1,0 +1,22 @@
+/* Import the Tajawal font from Google Fonts */
+/* @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap'); */
+
+@font-face {
+    font-family: 'Tajawal';
+    src: url(../fonts/Tajawal-Regular.ttf) format('truetype'),
+        local('Tajawal');
+}
+
+html,
+body {
+    direction: rtl;
+    text-align: right;
+}
+
+body {
+    font-family: 'Tajawal', sans-serif;
+}
+
+.dropdown-menu .dropdown-item {
+    text-align: right;
+}
